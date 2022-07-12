@@ -20,7 +20,7 @@ class Form extends Component {
 
     submitData = () => {
         this.props.addData(this.state);
-        this.setState(this.state);
+        this.setState(this.template);
     }
     
     render(){
