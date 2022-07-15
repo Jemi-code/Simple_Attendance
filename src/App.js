@@ -34,6 +34,7 @@ class App extends Component{
                 <h1>Attendance System</h1>
                 <i>Kindly input your details</i>
                 <Form addData = {this.addData} />
+                <strong>Number of people in meeting {peoples.length}</strong>
                 </div>
                 <People className = "app" characterData = {peoples} removeData = {this.removeData} />
             </div>
