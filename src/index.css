@@ -9,6 +9,16 @@ body {
   font-size: 14px;
 }
 
+.main{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.formy{
+  margin-right: 4rem;
+}
+
 body, .one, i{
  display: flex;
  flex-direction: column;
@@ -29,6 +39,12 @@ code {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   margin: 1rem 0;
+}
+
+.people{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .one > button, button, input[type = "button"]{
@@ -69,4 +85,19 @@ form > input{
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+@media screen and (max-width:600px){
+  .main{
+    flex-direction: column;
+  }
+
+  .people{
+    grid-template-columns: 1fr;
+    grid-gap: 0px !important;
+  }
+
+  .formy{
+    margin-right: 0;
+  }
 }

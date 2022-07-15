@@ -19,8 +19,22 @@ class Form extends Component {
     }
 
     submitData = () => {
-        this.props.addData(this.state);
+        if(this.state.name === "" || this.state.department === "" || this.state.title === "" || this.state.id === ""){
+            document.querySelector('.notification').innerHTML = `No field must be left empty`;
+        } else {
+            this.props.addData(this.state);
         this.setState(this.template);
+        this.showNotification(this.state.name);
+        }
+    }
+
+    showNotification = (name) => {
+        let notification = `Your data has been submitted ${name}`;
+        const noti = document.querySelector('.notification');
+        noti.innerHTML = notification;
+        setInterval(() => {
+            noti.style.display = "none"
+        }, 2000)
     }
     
     render(){
@@ -58,6 +72,7 @@ class Form extends Component {
                 onChange = {this.handleChange} />
     
                 <input type = 'button' onClick={this.submitData} value = "Submit" />
+                <p className='notification'></p>
             </form>
             )
     }

@@ -29,10 +29,12 @@ class App extends Component{
     render(){
         const {peoples} = this.state;
         return(
-            <div>
+            <div className='main'>
+                <div className='formy'>
                 <h1>Attendance System</h1>
                 <i>Kindly input your details</i>
                 <Form addData = {this.addData} />
+                </div>
                 <People className = "app" characterData = {peoples} removeData = {this.removeData} />
             </div>
         )
