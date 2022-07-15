@@ -93,7 +93,7 @@ form > input{
   }
 
   .people{
-    grid-template-columns: 1fr;
+    grid-template-columns: 120%;
     grid-gap: 0px !important;
   }
 
