@@ -87,6 +87,16 @@ form > input{
   -o-border-radius: 20px;
 }
 
+a{
+  text-decoration: none;
+  color: rgb(52, 24, 155);
+}
+
+a:hover{
+  color: rgb(83, 139, 196);
+  text-decoration: underline;
+}
+
 @media screen and (max-width:600px){
   .main{
     flex-direction: column;
