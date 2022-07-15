@@ -67,7 +67,7 @@ code {
 
 form > input, form > label{
   display: block;
-  width: 100%;
+  width: 80%;
 }
 
 input[type = "button"]{
@@ -76,7 +76,7 @@ input[type = "button"]{
 }
 
 form > input{
-  padding: 0.5rem 0.3rem;
+  padding: 0.5rem 1rem;
   font-size: 1.3rem;
   outline: none;
   border: none;
